@@ -12,8 +12,11 @@ bool StudentManager::load()
 
 bool StudentManager::existsId(const std::string& id) const
 {
-    // TODO: students에 같은 학번이 있는지 확인
-    (void)id;
+    for (const Student& s : students) {
+        if (s.getStudentId() == id) {
+            return true;
+        }
+    }
     return false;
 }
 
