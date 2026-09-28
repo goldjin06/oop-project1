@@ -79,6 +79,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Student.cpp" />
+    <ClCompile Include="src\Validator.cpp" />
+    <ClCompile Include="src\FileStudentRepository.cpp" />
+    <ClCompile Include="src\StudentComparator.cpp" />
+    <ClCompile Include="src\StudentManager.cpp" />
+    <ClCompile Include="src\StudentUI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Student.h" />
+    <ClInclude Include="src\Validator.h" />
+    <ClInclude Include="src\StudentRepository.h" />
+    <ClInclude Include="src\FileStudentRepository.h" />
+    <ClInclude Include="src\StudentComparator.h" />
+    <ClInclude Include="src\StudentManager.h" />
+    <ClInclude Include="src\StudentUI.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="file1.txt" />
