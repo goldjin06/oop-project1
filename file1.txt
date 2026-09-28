@@ -1,0 +1,30 @@
+Lisa Simpson|2006303001|2000|Computer Engineering|01012345678
+Gildong Hong|2004303077|1999|Computer Engineering|01187651234
+Bart Simpson|2006303015|2001|Mechanical Engineering|01055557777
+Chulsoo Kim|2005101042|2000|Business Administration|
+Younghee Lee|2004303101|1998|Computer Engineering|01099998888
+Minsu Park|2007303012|2001|Computer Engineering|01023456789
+Jiwoo Choi|2005202033|1999|Electrical Engineering|01034567890
+Seojun Jung|2006404021|2000|Mathematics|01045678901
+Hana Kang|2003505008|1997|Physics|0212345678
+Homer Simpson|2003101099|1996|Business Administration|01056789012
+Marge Simpson|2004606045|1998|English Literature|
+Maggie Simpson|2007303088|2002|Computer Engineering|01067890123
+Ned Flanders|2005707017|1999|Architecture|01078901234
+Doyoon Yoon|2006202054|2000|Electrical Engineering|01089012345
+Sujin Han|2007404003|2001|Mathematics|01090123456
+Jihoon Lim|2004303056|1998|Computer Engineering|01011112222
+Yuna Shin|2005505029|1999|Physics|
+Taeyang Oh|2006101073|2000|Business Administration|01033334444
+Eunji Seo|2007606011|2002|English Literature|01044445555
+Hyunwoo Kwon|2003202066|1997|Electrical Engineering|01066667777
+Soyeon Hwang|2006303042|2000|Computer Engineering|01077778888
+Jaemin Ahn|2005303064|1999|Computer Engineering|01088889999
+Chaewon Song|2007707025|2001|Architecture|01012121212
+Donghyun Jeon|2004202019|1998|Electrical Engineering|01023232323
+Alexander Smith|2006505037|2000||01034343434
+Emily Johnson|2005606058|1999|English Literature|01045454545
+Daniel Brown|2007101046|2001|Business Administration|
+Minsu Park|2004404082|1998|Mathematics|01056565656
+Sophia Williams|2003707031|1997|Architecture|01067676767
+Kevin Lee|2006202090|2000|Electrical Engineering|01078787878
