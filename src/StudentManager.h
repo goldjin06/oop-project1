@@ -32,6 +32,6 @@ public:
     void setComparator(std::unique_ptr<StudentComparator> c);  // 정렬 기준 교체
 
 private:
-    // comparator->less()로 std::stable_sort, 값이 같으면 학번순
+    // comparator->less()로 정렬, 값이 같으면 학번순
     void sortResult(std::vector<Student>& v) const;
 };
