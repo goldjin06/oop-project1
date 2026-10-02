@@ -59,9 +59,14 @@ bool Validator::isValidName(const std::string& s)
     if (s.empty() || s.length() > 15) {
         return false;
     }
-    // '|'는 필드를 나누는 기호이므로 만약 이름에 포함되어 있다면 false
+    
+    // '|' 기호 방지
     for (char c : s) {
         if (c == '|') {
+            return false;
+        }
+    // 영문자와 공백만 허용
+        if (!isalpha(c) && c != ' ') {
             return false;
         }
     }
