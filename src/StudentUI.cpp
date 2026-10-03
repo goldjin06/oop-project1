@@ -77,21 +77,21 @@ void StudentUI::doInsertion()
     if (inputClosed) return;
     std::string id = prompt("Student ID (10 digits)? ", Validator::isValidStudentId);
     if (inputClosed) return;
-    std::string birth = prompt("Birth Year (4 digits) ? ", Validator::isValidBirthYear);
+    std::string birth = prompt("Birth Year (4 digits)? ", Validator::isValidBirthYear);
     if (inputClosed) return;
     std::string dept = prompt("Department ? ", Validator::isValidDepartment);
     if (inputClosed) return;
-    std::string tel = prompt("Tel ? ", Validator::isValidTel);
+    std::string tel = prompt("Tel? ", Validator::isValidTel);
     if (inputClosed) return;
-
+    
     if (!manager.insert(Student(name, id, birth, dept, tel))) {
-        std::cout << "Error : Already inserted\n";
+        std::cout << "Error: Already inserted\n";
     }
 }
 
 void StudentUI::doSearch()
 {
-    std::cout << "- Search -\n"
+    std::cout << "Search\n"
               << "1. Search by name\n"
               << "2. Search by student ID (10 digits)\n"
               << "3. Search by admission year (4 digits)\n"
@@ -135,7 +135,7 @@ void StudentUI::doSearch()
 
 void StudentUI::doSortOption()
 {
-    std::cout << "- Sorting Option\n"
+    std::cout << "Sorting Option\n"
               << "1. Sort by Name\n"
               << "2. Sort by Student ID\n"
               << "3. Sort by Birth Year\n"
@@ -149,8 +149,7 @@ void StudentUI::doSortOption()
 
 void StudentUI::printTable(const std::vector<Student>& v) const
 {
-    // TODO: 헤더도 operator<<와 같은 열 너비로 맞추기, 0건이면 "No matching student." (요구사항 D4)
-    std::cout << "Name           StudentID    Dept                  Birth Year  Tel\n";
+    std::cout << "Name | StudentID | Dept | Birth Year | Tel\n";
     for (const Student& s : v) {
         std::cout << s << '\n';
     }

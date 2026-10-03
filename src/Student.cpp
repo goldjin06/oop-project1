@@ -42,6 +42,11 @@ bool Student::deserialize(const std::string& line, Student& out)
         tokens.push_back(token);
     }
 
+    // 전화 번호 없을 때 뒷 부분이 '|'로 끝났다면 자동으로 전화번호 빈칸인걸로 인식하기
+    if (!line.empty() && line.back() == '|') {
+        tokens.push_back("");
+    }
+
     // 항목이 정확히 5개가 아니면 false
     if (tokens.size() != 5) {
         return false;

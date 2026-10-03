@@ -2,6 +2,22 @@
 
 #include <algorithm>
 
+#include <cctype>
+
+static std::string toLower(const std::string& str) {
+    std::string result = str;
+    for (char& c : result) {
+        c = std::tolower(c);
+    }
+    return result;
+}
+
+static bool containsIgnoreCase(const std::string& text, const std::string& query) {
+    std::string lowerText = toLower(text);
+    std::string lowerQuery = toLower(query);
+    return lowerText.find(lowerQuery) != std::string::npos;
+}
+
 StudentManager::StudentManager(std::unique_ptr<StudentRepository> repo)
     : repo(std::move(repo)), comparator(std::make_unique<NameComparator>())
 {
@@ -38,7 +54,7 @@ std::vector<Student> StudentManager::searchByName(const std::string& key) const
 {
     std::vector<Student> result;
     for (int i = 0; i < students.size(); i++) {
-        if (students[i].getName() == key) {
+        if (containsIgnoreCase(students[i].getName(), key)) {
             result.push_back(students[i]);
         }
     }
@@ -86,7 +102,7 @@ std::vector<Student> StudentManager::searchByDepartment(const std::string& key) 
 {
     std::vector<Student> result;
     for (int i = 0; i < students.size(); i++) {
-        if (students[i].getDepartment() == key) {
+        if (containsIgnoreCase(students[i].getName(), key)) {
             result.push_back(students[i]);
         }
     }
